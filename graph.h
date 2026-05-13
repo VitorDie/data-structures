@@ -20,11 +20,11 @@ struct graph {
 
     void (*add_vertex)(void *object, int v);
     void (*add_vertex_with_weight)(void *object, int v, void *weight); /* Sobrecarga resolvida */
-    // struct vertex (*get_vertex)(void *object, int v);
+    struct vertex (*get_vertex)(void *object, int v);
 
     void (*add_edge)(void *object, int v, int w);
     void (*add_edge_with_weight)(void *object, int v, int w, void *weight); /* Sobrecarga resolvida */
-    // struct edge (*get_edge)(void *object, int v, int w);
+    struct edge (*get_edge)(void *object, int v, int w);
     bool (*is_edge)(void *object, int v, int w);
 
     // bool (*is_connected)(void *object);
