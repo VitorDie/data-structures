@@ -2,41 +2,39 @@
 #define GRAPH_H
 
 #include <stdbool.h>
+#include "vertex.h"
+#include "edge.h"
 
-struct vertex;
-struct edge;
+/* Forward declarations */
 struct enumeration;
 struct visitor;
 struct pre_post_visitor;
 
-/* Declaração da estrutura opaca */
-struct graph;
+/* Interface Graph */
+struct graph {
+    void *object;
 
-/* Construtor e Destrutor */
-struct graph *create_graph(void);
-void destroy_graph(struct graph *g);
+    int (*get_number_of_edges)(void *object);
+    int (*get_number_of_vertices)(void *object);
+    bool (*is_directed)(void *object);
 
-/* Métodos da interface Graph */
-int graph_get_number_of_edges(struct graph *g);
-int graph_get_number_of_vertices(struct graph *g);
-bool graph_is_directed(struct graph *g);
+    void (*add_vertex)(void *object, int v);
+    void (*add_vertex_with_weight)(void *object, int v, void *weight); /* Sobrecarga resolvida */
+    struct vertex (*get_vertex)(void *object, int v);
 
-void graph_add_vertex(struct graph *g, int v);
-void graph_add_vertex_with_weight(struct graph *g, int v, void *weight);
-struct vertex *graph_get_vertex(struct graph *g, int v);
+    void (*add_edge)(void *object, int v, int w);
+    void (*add_edge_with_weight)(void *object, int v, int w, void *weight); /* Sobrecarga resolvida */
+    struct edge (*get_edge)(void *object, int v, int w);
+    bool (*is_edge)(void *object, int v, int w);
 
-void graph_add_edge(struct graph *g, int v, int w);
-void graph_add_edge_with_weight(struct graph *g, int v, int w, void *weight);
-struct edge *graph_get_edge(struct graph *g, int v, int w);
-bool graph_is_edge(struct graph *g, int v, int w);
+    bool (*is_connected)(void *object);
+    bool (*is_cyclic)(void *object);
 
-bool graph_is_connected(struct graph *g);
-bool graph_is_cyclic(struct graph *g);
+    struct enumeration *(*get_vertices)(void *object);
+    struct enumeration *(*get_edges)(void *object);
 
-struct enumeration *graph_get_vertices(struct graph *g);
-struct enumeration *graph_get_edges(struct graph *g);
-
-void graph_depth_first_traversal(struct graph *g, struct pre_post_visitor *visitor, int start);
-void graph_breadth_first_traversal(struct graph *g, struct visitor *visitor, int start);
+    void (*depth_first_traversal)(void *object, struct pre_post_visitor *visitor, int start);
+    void (*breadth_first_traversal)(void *object, struct visitor *visitor, int start);
+};
 
 #endif /* GRAPH_H */

@@ -6,20 +6,12 @@
 
 struct visitor;
 
-/* Declaração da estrutura opaca */
-struct digraph;
+/* Interface Digraph (Herda de Graph) */
+struct digraph {
+    struct graph base_graph; /* Herança por alinhamento de memória  */
 
-/* Construtor e Destrutor */
-struct digraph *create_digraph(void);
-void destroy_digraph(struct digraph *dg);
-
-/* Métodos específicos do Digraph */
-bool digraph_is_strongly_connected(struct digraph *dg);
-void digraph_topological_order_traversal(struct digraph *dg, struct visitor *visitor);
-
-/* * Função de Polimorfismo/Casting Seguro:
- * Retorna o ponteiro base para que métodos de 'graph.h' possam ser usados.
- */
-struct graph *digraph_as_graph(struct digraph *dg);
+    bool (*is_strongly_connected)(void *object);
+    void (*topological_order_traversal)(void *object, struct visitor *visitor);
+};
 
 #endif /* DIGRAPH_H */

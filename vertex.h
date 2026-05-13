@@ -1,25 +1,23 @@
 #ifndef VERTEX_H
 #define VERTEX_H
 
-/* Forward declarations de dependências */
-struct enumeration; 
+/* Forward declarations */
+struct enumeration;
 
-/* Declaração da estrutura opaca */
-struct vertex;
+/* Interface Vertex */
+struct vertex {
+    void *object; /* Contexto da implementação concreta [cite: 1004-1005] */
 
-/* Construtor e Destrutor */
-struct vertex *create_vertex(int number, void *weight);
-void destroy_vertex(struct vertex *v);
+    int (*get_number)(void *object);
+    void *(*get_weight)(void *object);
+    
+    struct enumeration *(*get_incident_edges)(void *object);
+    struct enumeration *(*get_emanating_edges)(void *object);
+    struct enumeration *(*get_predecessors)(void *object);
+    struct enumeration *(*get_successors)(void *object);
+};
 
-/* Métodos da interface Vertex */
-int vertex_get_number(struct vertex *v);
-void *vertex_get_weight(struct vertex *v);
-struct enumeration *vertex_get_incident_edges(struct vertex *v);
-struct enumeration *vertex_get_emanating_edges(struct vertex *v);
-struct enumeration *vertex_get_predecessors(struct vertex *v);
-struct enumeration *vertex_get_successors(struct vertex *v);
-
-/* Equivalente ao Comparable.compareTo do Java */
-int vertex_compare(struct vertex *v1, struct vertex *v2);
+/* Extração do Comparable.compareTo */
+int vertex_compare(struct vertex v1, struct vertex v2);
 
 #endif /* VERTEX_H */
