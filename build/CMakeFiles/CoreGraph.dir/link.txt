@@ -1,0 +1,2 @@
+/usr/bin/ar qc libCoreGraph.a CMakeFiles/CoreGraph.dir/src/graph_vertex.c.o CMakeFiles/CoreGraph.dir/src/graph_edge.c.o CMakeFiles/CoreGraph.dir/src/graph_as_matrix.c.o CMakeFiles/CoreGraph.dir/src/digraph_as_matrix.c.o
+/usr/bin/ranlib libCoreGraph.a

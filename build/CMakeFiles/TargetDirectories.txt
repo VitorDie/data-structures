@@ -1,0 +1,5 @@
+/media/vitordie/KROSS/0Projetos/GitHub/Graph/build/CMakeFiles/CoreGraph.dir
+/media/vitordie/KROSS/0Projetos/GitHub/Graph/build/CMakeFiles/test_graph.dir
+/media/vitordie/KROSS/0Projetos/GitHub/Graph/build/CMakeFiles/test_digraph.dir
+/media/vitordie/KROSS/0Projetos/GitHub/Graph/build/CMakeFiles/edit_cache.dir
+/media/vitordie/KROSS/0Projetos/GitHub/Graph/build/CMakeFiles/rebuild_cache.dir

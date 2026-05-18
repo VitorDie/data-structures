@@ -1,0 +1,1 @@
+/usr/bin/cc  -Wall -Wextra -g CMakeFiles/test_digraph.dir/src/test_digraph.c.o -o test_digraph  libCoreGraph.a 

@@ -1,0 +1,1 @@
+/usr/bin/cc  -Wall -Wextra -g CMakeFiles/test_graph.dir/src/test_graph.c.o -o test_graph  libCoreGraph.a 
