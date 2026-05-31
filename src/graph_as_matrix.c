@@ -108,6 +108,25 @@ static struct edge get_edge_impl(void *object, int v, int w) {
     return null_e;
 }
 
+static void remove_vertex_impl(void *object, int vertex_id) {
+    struct graph_as_matrix *gam = (struct graph_as_matrix *)object;
+    
+    /* Verificamos se o Vértice existe fisicamente (se o objeto interno não é nulo) */
+    if (gam->array_of_vertices[vertex_id].object != NULL) {
+        
+        /* 1. Aniquilamos o Vértice (Devolvemos ao vazio) */
+        gam->array_of_vertices[vertex_id].object = NULL; 
+        gam->number_of_vertices--;
+        
+        /* 2. Limpamos qualquer fantasma de Aresta na Matriz de Adjacência.
+           Como você definiu sabiamente: "NULL no object se não existir". */
+        for (int i = 0; i < MAX_VERTICES; i++) {
+            gam->matrix_of_edges[vertex_id][i].object = NULL;
+            gam->matrix_of_edges[i][vertex_id].object = NULL;
+        }
+    }
+}
+
 /* --- API Pública Concreta --- */
 
 struct graph_as_matrix *create_graph_as_matrix(bool directed) {
@@ -165,5 +184,6 @@ struct graph graph_as_matrix_as_graph(struct graph_as_matrix *gam) {
     g.add_edge_with_weight = add_edge_with_weight_impl;
     g.is_edge = is_edge_impl;
     g.get_edge = get_edge_impl;
+    g.remove_vertex = remove_vertex_impl;
     return g;
 }

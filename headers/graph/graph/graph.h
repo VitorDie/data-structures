@@ -27,6 +27,8 @@ struct graph {
     struct edge (*get_edge)(void *object, int v, int w);
     bool (*is_edge)(void *object, int v, int w);
 
+    void (*remove_vertex)(void *object, int vertex_id);
+
     // bool (*is_connected)(void *object);
     // bool (*is_cyclic)(void *object);
 

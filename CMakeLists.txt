@@ -19,6 +19,7 @@ add_library(CoreGraph
     src/stack_as_list.c
     src/queue_as_list.c
     src/heap_as_tree.c
+    src/hash_table_as_graph.c
 )
 
 # 4. A Regra de Ouro: Ensinando onde estão os Headers
@@ -37,6 +38,7 @@ target_include_directories(CoreGraph PUBLIC headers
     headers/graph/tree/list/stack
     headers/graph/tree/list/queue
     headers/graph/tree/heap
+    headers/graph/hash_table
 )
 
 # 5. As Determinações: Criando os Executáveis de Teste
@@ -69,3 +71,7 @@ target_link_libraries(test_queue CoreGraph)
 # Teste do Heap
 add_executable(test_heap src/test_heap.c)
 target_link_libraries(test_heap CoreGraph)
+
+# Teste da Hash Table
+add_executable(test_hash_table src/test_hash_table.c)
+target_link_libraries(test_hash_table CoreGraph)
