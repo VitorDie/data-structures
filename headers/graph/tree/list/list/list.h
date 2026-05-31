@@ -15,7 +15,8 @@ struct list {
     int (*get_head)(void *object);
     int (*get_tail)(void *object);
 
-    void (*retrocede)(void *object); 
+    void (*step_back)(void *object);    /* Antigo retrocede */
+    void (*step_forward)(void *object);
 };
 
 #endif /* LIST_H */

@@ -17,6 +17,8 @@ add_library(CoreGraph
     src/tree_as_graph.c
     src/list_as_tree.c
     src/stack_as_list.c
+    src/queue_as_list.c
+    src/heap_as_tree.c
 )
 
 # 4. A Regra de Ouro: Ensinando onde estão os Headers
@@ -33,6 +35,8 @@ target_include_directories(CoreGraph PUBLIC headers
     headers/graph/tree/list
     headers/graph/tree/list/list
     headers/graph/tree/list/stack
+    headers/graph/tree/list/queue
+    headers/graph/tree/heap
 )
 
 # 5. As Determinações: Criando os Executáveis de Teste
@@ -57,3 +61,11 @@ target_link_libraries(test_list CoreGraph)
 # Teste da Pilha
 add_executable(test_stack src/test_stack.c)
 target_link_libraries(test_stack CoreGraph)
+
+# Teste da Fila
+add_executable(test_queue src/test_queue.c)
+target_link_libraries(test_queue CoreGraph)
+
+# Teste do Heap
+add_executable(test_heap src/test_heap.c)
+target_link_libraries(test_heap CoreGraph)

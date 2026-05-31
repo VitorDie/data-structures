@@ -30,7 +30,7 @@ static int pop_impl(void *object) {
     int top_value = peek_impl(object);
     
     /* 2. Damos o passo atrás na linha */
-    sal->motor_lista.retrocede(sal->motor_lista.object);
+    sal->motor_lista.step_back(sal->motor_lista.object);
     
     return top_value;
 }

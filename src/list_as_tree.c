@@ -35,7 +35,7 @@ static void append_impl(void *object, int value) {
     lat->tail_id = value;
 }
 
-static void retrocede_impl(void *object) {
+static void step_back_impl(void *object) {
     struct list_as_tree *lat = (struct list_as_tree *)object;
     struct tree t = lat->motor_arvore;
     
@@ -43,6 +43,19 @@ static void retrocede_impl(void *object) {
     int parent = t.get_parent(t.object, lat->tail_id);
     if (parent != -1) {
         lat->tail_id = parent; /* A deleção é lógica! Mantemos a memória, mas a cauda volta atrás. */
+    }
+}
+
+static void step_forward_impl(void *object) {
+    struct list_as_tree *lat = (struct list_as_tree *)object;
+    struct tree t = lat->motor_arvore;
+    struct graph g = t.base_graph;
+    
+    for (int i = 0; i < 50; i++) { 
+        if (g.is_edge(g.object, lat->head_id, i)) {
+            lat->head_id = i; 
+            break;
+        }
     }
 }
 
@@ -76,6 +89,7 @@ struct list list_as_tree_as_list(struct list_as_tree *lat) {
     l.append = append_impl;
     l.get_head = get_head_impl;
     l.get_tail = get_tail_impl;
-    l.retrocede = retrocede_impl;
+    l.step_back = step_back_impl;
+    l.step_forward = step_forward_impl;
     return l;
 }
