@@ -155,6 +155,19 @@ test_digraph/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_digraph.dir/build.make CMakeFiles/test_digraph.dir/build
 .PHONY : test_digraph/fast
 
+#=============================================================================
+# Target rules for targets named test_tree
+
+# Build rule for target.
+test_tree: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_tree
+.PHONY : test_tree
+
+# fast build rule for target.
+test_tree/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_tree.dir/build.make CMakeFiles/test_tree.dir/build
+.PHONY : test_tree/fast
+
 src/digraph_as_matrix.o: src/digraph_as_matrix.c.o
 .PHONY : src/digraph_as_matrix.o
 
@@ -299,6 +312,54 @@ src/test_graph.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_graph.dir/build.make CMakeFiles/test_graph.dir/src/test_graph.c.s
 .PHONY : src/test_graph.c.s
 
+src/test_tree.o: src/test_tree.c.o
+.PHONY : src/test_tree.o
+
+# target to build an object file
+src/test_tree.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_tree.dir/build.make CMakeFiles/test_tree.dir/src/test_tree.c.o
+.PHONY : src/test_tree.c.o
+
+src/test_tree.i: src/test_tree.c.i
+.PHONY : src/test_tree.i
+
+# target to preprocess a source file
+src/test_tree.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_tree.dir/build.make CMakeFiles/test_tree.dir/src/test_tree.c.i
+.PHONY : src/test_tree.c.i
+
+src/test_tree.s: src/test_tree.c.s
+.PHONY : src/test_tree.s
+
+# target to generate assembly for a file
+src/test_tree.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_tree.dir/build.make CMakeFiles/test_tree.dir/src/test_tree.c.s
+.PHONY : src/test_tree.c.s
+
+src/tree_as_graph.o: src/tree_as_graph.c.o
+.PHONY : src/tree_as_graph.o
+
+# target to build an object file
+src/tree_as_graph.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CoreGraph.dir/build.make CMakeFiles/CoreGraph.dir/src/tree_as_graph.c.o
+.PHONY : src/tree_as_graph.c.o
+
+src/tree_as_graph.i: src/tree_as_graph.c.i
+.PHONY : src/tree_as_graph.i
+
+# target to preprocess a source file
+src/tree_as_graph.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CoreGraph.dir/build.make CMakeFiles/CoreGraph.dir/src/tree_as_graph.c.i
+.PHONY : src/tree_as_graph.c.i
+
+src/tree_as_graph.s: src/tree_as_graph.c.s
+.PHONY : src/tree_as_graph.s
+
+# target to generate assembly for a file
+src/tree_as_graph.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CoreGraph.dir/build.make CMakeFiles/CoreGraph.dir/src/tree_as_graph.c.s
+.PHONY : src/tree_as_graph.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -310,6 +371,7 @@ help:
 	@echo "... CoreGraph"
 	@echo "... test_digraph"
 	@echo "... test_graph"
+	@echo "... test_tree"
 	@echo "... src/digraph_as_matrix.o"
 	@echo "... src/digraph_as_matrix.i"
 	@echo "... src/digraph_as_matrix.s"
@@ -328,6 +390,12 @@ help:
 	@echo "... src/test_graph.o"
 	@echo "... src/test_graph.i"
 	@echo "... src/test_graph.s"
+	@echo "... src/test_tree.o"
+	@echo "... src/test_tree.i"
+	@echo "... src/test_tree.s"
+	@echo "... src/tree_as_graph.o"
+	@echo "... src/tree_as_graph.i"
+	@echo "... src/tree_as_graph.s"
 .PHONY : help
 
 

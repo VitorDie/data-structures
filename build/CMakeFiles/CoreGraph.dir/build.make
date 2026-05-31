@@ -125,12 +125,27 @@ CMakeFiles/CoreGraph.dir/src/digraph_as_matrix.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/CoreGraph.dir/src/digraph_as_matrix.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /media/vitordie/KROSS/0Projetos/GitHub/Graph/src/digraph_as_matrix.c -o CMakeFiles/CoreGraph.dir/src/digraph_as_matrix.c.s
 
+CMakeFiles/CoreGraph.dir/src/tree_as_graph.c.o: CMakeFiles/CoreGraph.dir/flags.make
+CMakeFiles/CoreGraph.dir/src/tree_as_graph.c.o: /media/vitordie/KROSS/0Projetos/GitHub/Graph/src/tree_as_graph.c
+CMakeFiles/CoreGraph.dir/src/tree_as_graph.c.o: CMakeFiles/CoreGraph.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/media/vitordie/KROSS/0Projetos/GitHub/Graph/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/CoreGraph.dir/src/tree_as_graph.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/CoreGraph.dir/src/tree_as_graph.c.o -MF CMakeFiles/CoreGraph.dir/src/tree_as_graph.c.o.d -o CMakeFiles/CoreGraph.dir/src/tree_as_graph.c.o -c /media/vitordie/KROSS/0Projetos/GitHub/Graph/src/tree_as_graph.c
+
+CMakeFiles/CoreGraph.dir/src/tree_as_graph.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/CoreGraph.dir/src/tree_as_graph.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /media/vitordie/KROSS/0Projetos/GitHub/Graph/src/tree_as_graph.c > CMakeFiles/CoreGraph.dir/src/tree_as_graph.c.i
+
+CMakeFiles/CoreGraph.dir/src/tree_as_graph.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/CoreGraph.dir/src/tree_as_graph.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /media/vitordie/KROSS/0Projetos/GitHub/Graph/src/tree_as_graph.c -o CMakeFiles/CoreGraph.dir/src/tree_as_graph.c.s
+
 # Object files for target CoreGraph
 CoreGraph_OBJECTS = \
 "CMakeFiles/CoreGraph.dir/src/graph_vertex.c.o" \
 "CMakeFiles/CoreGraph.dir/src/graph_edge.c.o" \
 "CMakeFiles/CoreGraph.dir/src/graph_as_matrix.c.o" \
-"CMakeFiles/CoreGraph.dir/src/digraph_as_matrix.c.o"
+"CMakeFiles/CoreGraph.dir/src/digraph_as_matrix.c.o" \
+"CMakeFiles/CoreGraph.dir/src/tree_as_graph.c.o"
 
 # External object files for target CoreGraph
 CoreGraph_EXTERNAL_OBJECTS =
@@ -139,9 +154,10 @@ libCoreGraph.a: CMakeFiles/CoreGraph.dir/src/graph_vertex.c.o
 libCoreGraph.a: CMakeFiles/CoreGraph.dir/src/graph_edge.c.o
 libCoreGraph.a: CMakeFiles/CoreGraph.dir/src/graph_as_matrix.c.o
 libCoreGraph.a: CMakeFiles/CoreGraph.dir/src/digraph_as_matrix.c.o
+libCoreGraph.a: CMakeFiles/CoreGraph.dir/src/tree_as_graph.c.o
 libCoreGraph.a: CMakeFiles/CoreGraph.dir/build.make
 libCoreGraph.a: CMakeFiles/CoreGraph.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/media/vitordie/KROSS/0Projetos/GitHub/Graph/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C static library libCoreGraph.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/media/vitordie/KROSS/0Projetos/GitHub/Graph/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking C static library libCoreGraph.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/CoreGraph.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/CoreGraph.dir/link.txt --verbose=$(VERBOSE)
 

@@ -7,6 +7,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/CoreGraph.dir/src/graph_edge.c.o.d"
   "CMakeFiles/CoreGraph.dir/src/graph_vertex.c.o"
   "CMakeFiles/CoreGraph.dir/src/graph_vertex.c.o.d"
+  "CMakeFiles/CoreGraph.dir/src/tree_as_graph.c.o"
+  "CMakeFiles/CoreGraph.dir/src/tree_as_graph.c.o.d"
   "libCoreGraph.a"
   "libCoreGraph.pdb"
 )

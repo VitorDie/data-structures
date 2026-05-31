@@ -12,6 +12,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/media/vitordie/KROSS/0Projetos/GitHub/Graph/src/graph_as_matrix.c" "CMakeFiles/CoreGraph.dir/src/graph_as_matrix.c.o" "gcc" "CMakeFiles/CoreGraph.dir/src/graph_as_matrix.c.o.d"
   "/media/vitordie/KROSS/0Projetos/GitHub/Graph/src/graph_edge.c" "CMakeFiles/CoreGraph.dir/src/graph_edge.c.o" "gcc" "CMakeFiles/CoreGraph.dir/src/graph_edge.c.o.d"
   "/media/vitordie/KROSS/0Projetos/GitHub/Graph/src/graph_vertex.c" "CMakeFiles/CoreGraph.dir/src/graph_vertex.c.o" "gcc" "CMakeFiles/CoreGraph.dir/src/graph_vertex.c.o.d"
+  "/media/vitordie/KROSS/0Projetos/GitHub/Graph/src/tree_as_graph.c" "CMakeFiles/CoreGraph.dir/src/tree_as_graph.c.o" "gcc" "CMakeFiles/CoreGraph.dir/src/tree_as_graph.c.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

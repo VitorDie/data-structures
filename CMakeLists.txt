@@ -14,6 +14,7 @@ add_library(CoreGraph
     src/graph_edge.c 
     src/graph_as_matrix.c 
     src/digraph_as_matrix.c
+    src/tree_as_graph.c
 )
 
 # 4. A Regra de Ouro: Ensinando onde estão os Headers
@@ -30,3 +31,7 @@ target_link_libraries(test_graph CoreGraph)
 # Teste do Digrafo
 add_executable(test_digraph src/test_digraph.c)
 target_link_libraries(test_digraph CoreGraph)
+
+# Teste da Árvore
+add_executable(test_tree src/test_tree.c)
+target_link_libraries(test_tree CoreGraph)
