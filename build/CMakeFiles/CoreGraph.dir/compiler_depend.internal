@@ -3,12 +3,12 @@
 
 CMakeFiles/CoreGraph.dir/src/digraph_as_matrix.c.o
  /media/vitordie/KROSS/0Projetos/GitHub/Graph/src/digraph_as_matrix.c
- /media/vitordie/KROSS/0Projetos/GitHub/Graph/headers/digraph.h
- /media/vitordie/KROSS/0Projetos/GitHub/Graph/headers/digraph_as_matrix.h
- /media/vitordie/KROSS/0Projetos/GitHub/Graph/headers/edge.h
- /media/vitordie/KROSS/0Projetos/GitHub/Graph/headers/graph.h
- /media/vitordie/KROSS/0Projetos/GitHub/Graph/headers/graph_as_matrix.h
- /media/vitordie/KROSS/0Projetos/GitHub/Graph/headers/vertex.h
+ /media/vitordie/KROSS/0Projetos/GitHub/Graph/headers/graph/digraph.h
+ /media/vitordie/KROSS/0Projetos/GitHub/Graph/headers/graph/digraph_as_matrix.h
+ /media/vitordie/KROSS/0Projetos/GitHub/Graph/headers/graph/edge/edge.h
+ /media/vitordie/KROSS/0Projetos/GitHub/Graph/headers/graph/graph.h
+ /media/vitordie/KROSS/0Projetos/GitHub/Graph/headers/graph/graph_as_matrix.h
+ /media/vitordie/KROSS/0Projetos/GitHub/Graph/headers/graph/vertex/vertex.h
  /usr/include/alloca.h
  /usr/include/endian.h
  /usr/include/features-time64.h
@@ -57,12 +57,12 @@ CMakeFiles/CoreGraph.dir/src/digraph_as_matrix.c.o
 
 CMakeFiles/CoreGraph.dir/src/graph_as_matrix.c.o
  /media/vitordie/KROSS/0Projetos/GitHub/Graph/src/graph_as_matrix.c
- /media/vitordie/KROSS/0Projetos/GitHub/Graph/headers/edge.h
- /media/vitordie/KROSS/0Projetos/GitHub/Graph/headers/graph.h
- /media/vitordie/KROSS/0Projetos/GitHub/Graph/headers/graph_as_matrix.h
- /media/vitordie/KROSS/0Projetos/GitHub/Graph/headers/graph_edge.h
- /media/vitordie/KROSS/0Projetos/GitHub/Graph/headers/graph_vertex.h
- /media/vitordie/KROSS/0Projetos/GitHub/Graph/headers/vertex.h
+ /media/vitordie/KROSS/0Projetos/GitHub/Graph/headers/graph/edge/edge.h
+ /media/vitordie/KROSS/0Projetos/GitHub/Graph/headers/graph/edge/graph_edge.h
+ /media/vitordie/KROSS/0Projetos/GitHub/Graph/headers/graph/graph.h
+ /media/vitordie/KROSS/0Projetos/GitHub/Graph/headers/graph/graph_as_matrix.h
+ /media/vitordie/KROSS/0Projetos/GitHub/Graph/headers/graph/vertex/graph_vertex.h
+ /media/vitordie/KROSS/0Projetos/GitHub/Graph/headers/graph/vertex/vertex.h
  /usr/include/alloca.h
  /usr/include/endian.h
  /usr/include/features-time64.h
@@ -111,9 +111,9 @@ CMakeFiles/CoreGraph.dir/src/graph_as_matrix.c.o
 
 CMakeFiles/CoreGraph.dir/src/graph_edge.c.o
  /media/vitordie/KROSS/0Projetos/GitHub/Graph/src/graph_edge.c
- /media/vitordie/KROSS/0Projetos/GitHub/Graph/headers/edge.h
- /media/vitordie/KROSS/0Projetos/GitHub/Graph/headers/graph_edge.h
- /media/vitordie/KROSS/0Projetos/GitHub/Graph/headers/vertex.h
+ /media/vitordie/KROSS/0Projetos/GitHub/Graph/headers/graph/edge/edge.h
+ /media/vitordie/KROSS/0Projetos/GitHub/Graph/headers/graph/edge/graph_edge.h
+ /media/vitordie/KROSS/0Projetos/GitHub/Graph/headers/graph/vertex/vertex.h
  /usr/include/alloca.h
  /usr/include/endian.h
  /usr/include/features-time64.h
@@ -162,8 +162,8 @@ CMakeFiles/CoreGraph.dir/src/graph_edge.c.o
 
 CMakeFiles/CoreGraph.dir/src/graph_vertex.c.o
  /media/vitordie/KROSS/0Projetos/GitHub/Graph/src/graph_vertex.c
- /media/vitordie/KROSS/0Projetos/GitHub/Graph/headers/graph_vertex.h
- /media/vitordie/KROSS/0Projetos/GitHub/Graph/headers/vertex.h
+ /media/vitordie/KROSS/0Projetos/GitHub/Graph/headers/graph/vertex/graph_vertex.h
+ /media/vitordie/KROSS/0Projetos/GitHub/Graph/headers/graph/vertex/vertex.h
  /usr/include/alloca.h
  /usr/include/endian.h
  /usr/include/features-time64.h
@@ -211,12 +211,12 @@ CMakeFiles/CoreGraph.dir/src/graph_vertex.c.o
 
 CMakeFiles/CoreGraph.dir/src/tree_as_graph.c.o
  /media/vitordie/KROSS/0Projetos/GitHub/Graph/src/tree_as_graph.c
- /media/vitordie/KROSS/0Projetos/GitHub/Graph/headers/edge.h
- /media/vitordie/KROSS/0Projetos/GitHub/Graph/headers/graph.h
- /media/vitordie/KROSS/0Projetos/GitHub/Graph/headers/graph_as_matrix.h
- /media/vitordie/KROSS/0Projetos/GitHub/Graph/headers/tree.h
- /media/vitordie/KROSS/0Projetos/GitHub/Graph/headers/tree_as_graph.h
- /media/vitordie/KROSS/0Projetos/GitHub/Graph/headers/vertex.h
+ /media/vitordie/KROSS/0Projetos/GitHub/Graph/headers/graph/edge/edge.h
+ /media/vitordie/KROSS/0Projetos/GitHub/Graph/headers/graph/graph.h
+ /media/vitordie/KROSS/0Projetos/GitHub/Graph/headers/graph/graph_as_matrix.h
+ /media/vitordie/KROSS/0Projetos/GitHub/Graph/headers/graph/vertex/vertex.h
+ /media/vitordie/KROSS/0Projetos/GitHub/Graph/headers/tree/tree.h
+ /media/vitordie/KROSS/0Projetos/GitHub/Graph/headers/tree/tree_as_graph.h
  /usr/include/alloca.h
  /usr/include/endian.h
  /usr/include/features-time64.h

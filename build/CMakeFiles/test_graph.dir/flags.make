@@ -4,7 +4,7 @@
 # compile C with /usr/bin/cc
 C_DEFINES = 
 
-C_INCLUDES = -I/media/vitordie/KROSS/0Projetos/GitHub/Graph/headers
+C_INCLUDES = -I/media/vitordie/KROSS/0Projetos/GitHub/Graph/headers -I/media/vitordie/KROSS/0Projetos/GitHub/Graph/headers/graph -I/media/vitordie/KROSS/0Projetos/GitHub/Graph/headers/graph/edge -I/media/vitordie/KROSS/0Projetos/GitHub/Graph/headers/graph/vertex -I/media/vitordie/KROSS/0Projetos/GitHub/Graph/headers/tree
 
 C_FLAGS =  -Wall -Wextra -g -std=gnu11
 

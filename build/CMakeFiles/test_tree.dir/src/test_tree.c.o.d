@@ -24,10 +24,10 @@ CMakeFiles/test_tree.dir/src/test_tree.c.o: \
  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
  /usr/include/x86_64-linux-gnu/bits/floatn.h \
  /usr/include/x86_64-linux-gnu/bits/floatn-common.h /usr/include/assert.h \
- /media/vitordie/KROSS/0Projetos/GitHub/Graph/headers/tree.h \
- /media/vitordie/KROSS/0Projetos/GitHub/Graph/headers/graph.h \
+ /media/vitordie/KROSS/0Projetos/GitHub/Graph/headers/tree/tree.h \
+ /media/vitordie/KROSS/0Projetos/GitHub/Graph/headers/graph/graph.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdbool.h \
- /media/vitordie/KROSS/0Projetos/GitHub/Graph/headers/vertex.h \
- /media/vitordie/KROSS/0Projetos/GitHub/Graph/headers/edge.h \
- /media/vitordie/KROSS/0Projetos/GitHub/Graph/headers/tree_as_graph.h \
- /media/vitordie/KROSS/0Projetos/GitHub/Graph/headers/tree.h
+ /media/vitordie/KROSS/0Projetos/GitHub/Graph/headers/graph/vertex/vertex.h \
+ /media/vitordie/KROSS/0Projetos/GitHub/Graph/headers/graph/edge/edge.h \
+ /media/vitordie/KROSS/0Projetos/GitHub/Graph/headers/tree/tree_as_graph.h \
+ /media/vitordie/KROSS/0Projetos/GitHub/Graph/headers/tree/tree.h

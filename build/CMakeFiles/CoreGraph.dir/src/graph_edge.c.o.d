@@ -40,7 +40,7 @@ CMakeFiles/CoreGraph.dir/src/graph_edge.c.o: \
  /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h /usr/include/alloca.h \
  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
- /media/vitordie/KROSS/0Projetos/GitHub/Graph/headers/graph_edge.h \
+ /media/vitordie/KROSS/0Projetos/GitHub/Graph/headers/graph/edge/graph_edge.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdbool.h \
- /media/vitordie/KROSS/0Projetos/GitHub/Graph/headers/edge.h \
- /media/vitordie/KROSS/0Projetos/GitHub/Graph/headers/vertex.h
+ /media/vitordie/KROSS/0Projetos/GitHub/Graph/headers/graph/edge/edge.h \
+ /media/vitordie/KROSS/0Projetos/GitHub/Graph/headers/graph/vertex/vertex.h

@@ -3,10 +3,10 @@
 
 CMakeFiles/test_graph.dir/src/test_graph.c.o
  /media/vitordie/KROSS/0Projetos/GitHub/Graph/src/test_graph.c
- /media/vitordie/KROSS/0Projetos/GitHub/Graph/headers/edge.h
- /media/vitordie/KROSS/0Projetos/GitHub/Graph/headers/graph.h
- /media/vitordie/KROSS/0Projetos/GitHub/Graph/headers/graph_as_matrix.h
- /media/vitordie/KROSS/0Projetos/GitHub/Graph/headers/vertex.h
+ /media/vitordie/KROSS/0Projetos/GitHub/Graph/headers/graph/edge/edge.h
+ /media/vitordie/KROSS/0Projetos/GitHub/Graph/headers/graph/graph.h
+ /media/vitordie/KROSS/0Projetos/GitHub/Graph/headers/graph/graph_as_matrix.h
+ /media/vitordie/KROSS/0Projetos/GitHub/Graph/headers/graph/vertex/vertex.h
  /usr/include/assert.h
  /usr/include/features-time64.h
  /usr/include/features.h

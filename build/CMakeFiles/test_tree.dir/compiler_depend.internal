@@ -3,11 +3,11 @@
 
 CMakeFiles/test_tree.dir/src/test_tree.c.o
  /media/vitordie/KROSS/0Projetos/GitHub/Graph/src/test_tree.c
- /media/vitordie/KROSS/0Projetos/GitHub/Graph/headers/edge.h
- /media/vitordie/KROSS/0Projetos/GitHub/Graph/headers/graph.h
- /media/vitordie/KROSS/0Projetos/GitHub/Graph/headers/tree.h
- /media/vitordie/KROSS/0Projetos/GitHub/Graph/headers/tree_as_graph.h
- /media/vitordie/KROSS/0Projetos/GitHub/Graph/headers/vertex.h
+ /media/vitordie/KROSS/0Projetos/GitHub/Graph/headers/graph/edge/edge.h
+ /media/vitordie/KROSS/0Projetos/GitHub/Graph/headers/graph/graph.h
+ /media/vitordie/KROSS/0Projetos/GitHub/Graph/headers/graph/vertex/vertex.h
+ /media/vitordie/KROSS/0Projetos/GitHub/Graph/headers/tree/tree.h
+ /media/vitordie/KROSS/0Projetos/GitHub/Graph/headers/tree/tree_as_graph.h
  /usr/include/assert.h
  /usr/include/features-time64.h
  /usr/include/features.h

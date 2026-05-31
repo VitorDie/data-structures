@@ -40,5 +40,5 @@ CMakeFiles/CoreGraph.dir/src/graph_vertex.c.o: \
  /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h /usr/include/alloca.h \
  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
- /media/vitordie/KROSS/0Projetos/GitHub/Graph/headers/graph_vertex.h \
- /media/vitordie/KROSS/0Projetos/GitHub/Graph/headers/vertex.h
+ /media/vitordie/KROSS/0Projetos/GitHub/Graph/headers/graph/vertex/graph_vertex.h \
+ /media/vitordie/KROSS/0Projetos/GitHub/Graph/headers/graph/vertex/vertex.h
