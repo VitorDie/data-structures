@@ -15,6 +15,7 @@ add_library(CoreGraph
     src/graph_as_matrix.c 
     src/digraph_as_matrix.c
     src/tree_as_graph.c
+    src/list_as_tree.c
 )
 
 # 4. A Regra de Ouro: Ensinando onde estão os Headers
@@ -22,9 +23,13 @@ add_library(CoreGraph
 target_include_directories(CoreGraph PUBLIC headers
     headers
     headers/graph
-    headers/graph/edge
-    headers/graph/vertex
-    headers/tree
+    headers/graph/graph
+    headers/graph/graph/edge
+    headers/graph/graph/vertex
+    headers/graph/digraph
+    headers/graph/digraph
+    headers/graph/tree/tree
+    headers/graph/tree/list
 )
 
 # 5. As Determinações: Criando os Executáveis de Teste
@@ -41,3 +46,7 @@ target_link_libraries(test_digraph CoreGraph)
 # Teste da Árvore
 add_executable(test_tree src/test_tree.c)
 target_link_libraries(test_tree CoreGraph)
+
+# Teste da Lista
+add_executable(test_list src/test_list.c)
+target_link_libraries(test_list CoreGraph)
