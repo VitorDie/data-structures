@@ -20,6 +20,7 @@ add_library(CoreGraph
     src/queue_as_list.c
     src/heap_as_tree.c
     src/hash_table_as_graph.c
+    src/directory_as_tree.c
 )
 
 # 4. A Regra de Ouro: Ensinando onde estão os Headers
@@ -38,6 +39,7 @@ target_include_directories(CoreGraph PUBLIC headers
     headers/graph/tree/list/stack
     headers/graph/tree/list/queue
     headers/graph/tree/heap
+    headers/graph/tree/directory
     headers/graph/hash_table
 )
 
@@ -75,3 +77,7 @@ target_link_libraries(test_heap CoreGraph)
 # Teste da Hash Table
 add_executable(test_hash_table src/test_hash_table.c)
 target_link_libraries(test_hash_table CoreGraph)
+
+# Teste do Diretório (File System)
+add_executable(test_directory src/test_directory.c)
+target_link_libraries(test_directory CoreGraph)
