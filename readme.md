@@ -28,7 +28,7 @@ graph/
 └── tree
     ├── directory
     ├── heap
-    └── linked list
+    └── list
         ├── queue
         └── stack
 ```
