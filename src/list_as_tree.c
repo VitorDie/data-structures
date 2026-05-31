@@ -35,6 +35,17 @@ static void append_impl(void *object, int value) {
     lat->tail_id = value;
 }
 
+static void retrocede_impl(void *object) {
+    struct list_as_tree *lat = (struct list_as_tree *)object;
+    struct tree t = lat->motor_arvore;
+    
+    /* Para recuar na linha, perguntamos à Árvore quem é o pai da cauda atual */
+    int parent = t.get_parent(t.object, lat->tail_id);
+    if (parent != -1) {
+        lat->tail_id = parent; /* A deleção é lógica! Mantemos a memória, mas a cauda volta atrás. */
+    }
+}
+
 /* --- Construtores e Polimorfismo --- */
 
 struct list_as_tree *create_list_as_tree(int initial_value) {
@@ -65,5 +76,6 @@ struct list list_as_tree_as_list(struct list_as_tree *lat) {
     l.append = append_impl;
     l.get_head = get_head_impl;
     l.get_tail = get_tail_impl;
+    l.retrocede = retrocede_impl;
     return l;
 }

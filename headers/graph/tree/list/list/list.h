@@ -14,6 +14,8 @@ struct list {
     /* Acesso às extremidades (A preparação para a Fila/Pilha que virão depois) */
     int (*get_head)(void *object);
     int (*get_tail)(void *object);
+
+    void (*retrocede)(void *object); 
 };
 
 #endif /* LIST_H */
