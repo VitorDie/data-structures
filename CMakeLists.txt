@@ -19,7 +19,13 @@ add_library(CoreGraph
 
 # 4. A Regra de Ouro: Ensinando onde estão os Headers
 # Isso permite que os arquivos .c façam #include "graph.h" sem dar erro de caminho
-target_include_directories(CoreGraph PUBLIC headers)
+target_include_directories(CoreGraph PUBLIC headers
+    headers
+    headers/graph
+    headers/graph/edge
+    headers/graph/vertex
+    headers/tree
+)
 
 # 5. As Determinações: Criando os Executáveis de Teste
 # Para cada arquivo com um 'main()', criamos um executável separado
