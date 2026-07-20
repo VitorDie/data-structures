@@ -1,4 +1,4 @@
-# Data Strcutures
+# Data Structures
 
 Este projeto é uma biblioteca de estruturas de dados desenvolvida em C puro.
 
