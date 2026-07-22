@@ -30,7 +30,7 @@ graph/
 
 # Requisitos e Como Instalar
 
-Para compilar a arquitetura e rodar a suíte de testes locais, você precisará do cmake, make e dos compiladores nativo e cruzado (para o alvo de 16-bits).
+Para compilar a arquitetura e rodar a suíte de testes locais, você precisará do cmake.
 
 Abra o terminal e execute:
 
